@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App{
+  display: flex;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.component-container{
+  text-align: left;
 }
+
+header{
+  text-align: left;
+  font-size: 24px;
+}
+
+.image-container{
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 50px;
+}
+
+.image-container img{
+  float: left;
+}
+
+.image-container a{
+  max-width: 1000px;
+  max-height: 400px;
+  overflow: hidden;
+  
+}
+
+.button-container{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.image-container button{
+  width: 200px;
+  height: 50px;
+}
+
+.goods-name{
+  color: #34BFEF;
+  padding-left: 20px;
+  border-left: solid #34BFEF 5pt;
+  width: fit-content;
+  margin-left: 50px;
+}
+
+.goods-price{
+  width: fit-content;
+}
+
+.goods-card{
+  width: fit-content;
+  max-width: 200px;
+  margin-top: 100px;
+}
+
+.goods-gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
